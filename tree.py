@@ -37,7 +37,7 @@ def merge(a, b):
     return True
 
 
-if __name__ == '__main__':
+def tree_graph(origin):
     final = []
     while len(origin) > 0:
         ori_item = origin.pop()
@@ -49,6 +49,12 @@ if __name__ == '__main__':
 
         if merged == 0:
             final.append(ori_item)
+
+    return final
+
+
+if __name__ == '__main__':
+    final = tree_graph(origin)
 
     for i in final:
         print i
